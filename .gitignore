@@ -1,0 +1,273 @@
+# Trading Application - Git Ignore Configuration
+
+# ===================================
+# NODE.JS & NPM
+# ===================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# Snowpack dependency directory
+web_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# ===================================
+# ENVIRONMENT & SECRETS
+# ===================================
+# Environment variables (CRITICAL - contains API keys!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Environment template (this should be committed)
+!.env.example
+!.env.template
+
+# ===================================
+# LOGS & DEBUGGING
+# ===================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ===================================
+# TRADING SPECIFIC
+# ===================================
+# Trading data and caches
+data/
+cache/
+temp/
+tmp/
+
+# Session files
+sessions/
+*.session
+
+# Trading logs
+trading-logs/
+broker-logs/
+
+# Backup files
+backups/
+*.backup
+*.bak
+
+# CSV exports
+exports/
+*.csv
+
+# Database dumps
+dumps/
+*.dump
+*.sql
+
+# ===================================
+# DEVELOPMENT TOOLS
+# ===================================
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===================================
+# BUILD & DIST
+# ===================================
+build/
+dist/
+out/
+
+# ===================================
+# TESTING
+# ===================================
+coverage/
+.nyc_output/
+test-results/
+junit.xml
+
+# ===================================
+# DOCUMENTATION
+# ===================================
+# Ignore generated docs (keep source docs)
+docs/generated/
+api-docs/
+
+# Keep important documentation
+!README.md
+!QUICKSTART.md
+!ZERODHA_SETUP.md
+!CLEANUP_GUIDE.md
+
+# ===================================
+# CERTIFICATES & KEYS
+# ===================================
+# SSL certificates
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+
+# SSH keys
+id_rsa
+id_rsa.pub
+
+# ===================================
+# DOCKER (if added later)
+# ===================================
+.dockerignore
+
+# ===================================
+# KUBERNETES (if added later)
+# ===================================
+kube-config
+*.yaml.backup
+
+# ===================================
+# MONITORING & PERFORMANCE
+# ===================================
+# Performance monitoring
+flamegraphs/
+*.prof
+
+# Memory dumps
+*.heapsnapshot
+
+# ===================================
+# PACKAGE MANAGERS
+# ===================================
+# Yarn
+.yarn/
+.pnp.*
+
+# PNPM
+.pnpm-store/
+
+# ===================================
+# TEMPORARY FILES
+# ===================================
+.tmp/
+.temp/
+*.tmp
+*.temp
+
+# ===================================
+# CUSTOM APPLICATION FILES
+# ===================================
+# Add your custom files here
+
+# Example: Custom config files that contain secrets
+# config/production.json
+# config/secrets.json

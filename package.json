@@ -1,0 +1,28 @@
+{
+  "name": "trading-app",
+  "version": "1.0.0",
+  "description": "Multi-broker trading application with extensible architecture",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon --exitcrash src/server.js"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^11.0.2",
+    "@fastify/cors": "^10.0.0",
+    "@fastify/jwt": "^9.0.0",
+    "@fastify/session": "^11.1.0",
+    "axios": "^1.12.2",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^17.2.3",
+    "fastify": "^5.6.1",
+    "googleapis": "^142.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "kiteconnect": "^5.1.0",
+    "mongoose": "^8.7.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
