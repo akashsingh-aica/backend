@@ -271,3 +271,4 @@ flamegraphs/
 # Example: Custom config files that contain secrets
 # config/production.json
 # config/secrets.json
+user.json

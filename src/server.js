@@ -44,9 +44,14 @@ class TradingServer {
             secret: process.env.SESSION_SECRET || 'your-session-secret',
             cookieName: 'sessionId',
             cookie: {
-                secure: process.env.NODE_ENV === 'production',
-                maxAge: 24 * 60 * 60 * 1000 // 24 hours
-            }
+                secure: false, // Allow HTTP in development
+                httpOnly: true,
+                sameSite: 'lax', // Allow cookie on redirects
+                path: '/',
+                maxAge: 30 * 60 * 1000 // 30 minutes (long enough for OAuth flow)
+            },
+            saveUninitialized: false,
+            rolling: true // Extend session on each request
         });
     }
 
